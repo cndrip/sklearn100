@@ -23,7 +23,7 @@ grid_search=GridSearchCV(
         classifer,
         param_grid=param,
         scoring="accuracy",
-        cv=5   
+        cv=5
 )
 grid_search.fit(x_train,y_train)
 print(grid_search.best_estimator_)
